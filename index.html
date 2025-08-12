@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataLingo - Aprenda Banco de Dados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --primary-color: #58cc02;
+            --secondary-color: #1cb0f6;
+            --dark-color: #3c3c3c;
+            --light-color: #f8f8f8;
+            --error-color: #ff4b4b;
+            --warning-color: #ffc800;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+        
+        /* Estilos continuam abaixo... */
+    </style>
+</head>
+<body>
+    <header class="app-header">
+        <div class="container">
+            <div class="header-left">
+                <a href="#" class="logo">DataLingo</a>
+                <nav class="main-nav">
+                    <a href="#" class="nav-link active">Aprender</a>
+                    <a href="#" class="nav-link">Praticar</a>
+                    <a href="#" class="nav-link">Ranking</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="xp-badge">1.245 XP</span>
+                    <img src="https://via.placeholder.com/40" alt="Perfil" class="profile-pic">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div class="container">
+            <!-- Conteúdo principal será injetado aqui -->
+            <div class="lesson-container" id="lesson-container">
+                <!-- Conteúdo da lição será carregado dinamicamente -->
+            </div>
+            
+            <div class="progress-section">
+                <div class="progress-track">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                    <div class="progress-marker" style="left: 20%;"></div>
+                    <div class="progress-marker" style="left: 40%;"></div>
+                    <div class="progress-marker current" style="left: 60%;"></div>
+                </div>
+                <div class="streak-counter">
+                    <i class="fas fa-fire"></i>
+                    <span>7 dias</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="container">
+            <p>© 2023 DataLingo - Aprenda Banco de Dados de Forma Divertida</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/rewards.js"></script>
+</body>
+</html>
